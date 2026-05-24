@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOIA Generator Starter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="label">AI-Native Citizens starter kit</p>
+      <h1>FOIA Request Generator</h1>
+      <form id="request-form">
+        <label>Requester name <input name="requester" type="text" required></label>
+        <label>Public institution <input name="institution" type="text" required></label>
+        <label>Information requested <textarea name="information" required></textarea></label>
+        <label>Reason for public interest <textarea name="reason" required></textarea></label>
+        <button type="submit">Generate Draft</button>
+      </form>
+      <section>
+        <h2>Draft</h2>
+        <textarea id="output" readonly rows="14"></textarea>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

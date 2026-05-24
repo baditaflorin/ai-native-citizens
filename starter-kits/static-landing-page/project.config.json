@@ -1,0 +1,14 @@
+{
+  "project_name": "Project Name",
+  "challenge": "Challenge Name",
+  "city": "City",
+  "problem": "One-sentence public problem.",
+  "user": "Named user.",
+  "what_it_does": "One sentence on what the prototype does.",
+  "demo_url": "https://example.com/demo",
+  "repo_url": "https://example.com/repo",
+  "build_log_url": "https://example.com/build-log",
+  "limits": ["Prototype only", "Sample data only", "Human verification required"],
+  "team": ["Team member"]
+}
+

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ainativecitizens.badita.org/schemas/ai-build-log.schema.json",
+  "title": "AI-Native Citizens Build Log Input",
+  "type": "object",
+  "required": ["project", "team", "sprint_city", "date", "problem", "user", "tools_used", "key_prompts", "what_ai_generated_well", "what_was_wrong_and_corrected_manually", "what_was_hard", "what_works", "what_does_not_work", "next_steps", "repo_link", "demo_link"],
+  "properties": {
+    "project": {"type": "string", "minLength": 2},
+    "team": {"type": "string", "minLength": 2},
+    "sprint_city": {"type": "string", "minLength": 2},
+    "date": {"type": "string", "minLength": 4},
+    "problem": {"type": "string", "minLength": 10},
+    "user": {"type": "string", "minLength": 5},
+    "tools_used": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "key_prompts": {"type": "array", "items": {"type": "string"}, "minItems": 5, "maxItems": 5},
+    "what_ai_generated_well": {"type": "string", "minLength": 5},
+    "what_was_wrong_and_corrected_manually": {"type": "string", "minLength": 5},
+    "what_was_hard": {"type": "string", "minLength": 5},
+    "what_works": {"type": "string", "minLength": 5},
+    "what_does_not_work": {"type": "string", "minLength": 5},
+    "next_steps": {"type": "string", "minLength": 5},
+    "repo_link": {"type": "string"},
+    "demo_link": {"type": "string"}
+  },
+  "additionalProperties": true
+}
+

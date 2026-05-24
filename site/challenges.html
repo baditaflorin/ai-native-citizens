@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge Browser | AI-Native Citizens</title>
+    <meta name="description" content="Search the AI-Native Citizens challenge bank and AI workflow cards.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,900&amp;family=JetBrains+Mono:wght@400&amp;family=Public+Sans:wght@400;500;700&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,900&amp;family=JetBrains+Mono:wght@400&amp;family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,900&amp;family=JetBrains+Mono:wght@400&amp;family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="challenge-browser.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" aria-label="Site header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">AI-Native Citizens</a>
+        <div class="nav-links">
+          <a href="index.html#manifesto">Manifesto</a>
+          <a href="index.html#kit">Kit</a>
+          <a href="challenges.html" aria-current="page">Challenges</a>
+          <a href="index.html#host">Host</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="browser-page">
+      <section class="browser-hero" aria-labelledby="browser-title">
+        <p class="kicker">v0.2 alpha</p>
+        <h1 id="browser-title">Challenge Browser</h1>
+        <p class="subtitle">Starter civic problems and workflow cards, searchable without a backend.</p>
+      </section>
+
+      <section class="browser-controls" aria-label="Challenge filters">
+        <label for="search">Search</label>
+        <input id="search" name="search" type="search" autocomplete="off" placeholder="budget, FOIA, school, PDF">
+        <fieldset>
+          <legend>Difficulty</legend>
+          <label><input type="radio" name="difficulty" value="All" checked> All</label>
+          <label><input type="radio" name="difficulty" value="Easy"> Easy</label>
+          <label><input type="radio" name="difficulty" value="Medium"> Medium</label>
+          <label><input type="radio" name="difficulty" value="Hard"> Hard</label>
+        </fieldset>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+      </section>
+
+      <section aria-labelledby="challenge-list-title" class="browser-results">
+        <h2 id="challenge-list-title">Challenges</h2>
+        <div id="challenge-list" class="challenge-list"></div>
+      </section>
+
+      <section aria-labelledby="workflow-list-title" class="browser-results workflow-section">
+        <h2 id="workflow-list-title">Workflow Cards</h2>
+        <div id="workflow-list" class="workflow-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><span class="mark" aria-hidden="true">AC</span> Data from the AI-Native Citizens Kit. Repo: <a href="https://github.com/baditaflorin/ai-native-citizens">https://github.com/baditaflorin/ai-native-citizens</a></p>
+    </footer>
+
+    <script src="challenge-browser.js" type="module"></script>
+  </body>
+</html>

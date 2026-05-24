@@ -1,0 +1,25 @@
+{
+  "project": "Council Decisions Explainer",
+  "team": "Team Public Receipts",
+  "sprint_city": "Arad",
+  "date": "2026-05-25",
+  "problem": "Council decisions are public but too dense for residents to understand quickly.",
+  "user": "Radu, a neighborhood association member tracking zoning decisions.",
+  "tools_used": ["ChatGPT", "Codex", "Tabula", "GitHub Pages"],
+  "key_prompts": [
+    "Turn this complaint into a 48h civic product brief: residents cannot understand council decisions before they affect a neighborhood.",
+    "Extract the main entities, dates, locations, and decision effects from this council decision text. Do not invent missing data.",
+    "Create a six-step user flow for a resident who wants to understand one new council decision.",
+    "Red-team this prototype for ways it could mislead residents or overstate legal certainty.",
+    "Clean this build log without changing facts. Preserve prompt excerpts exactly."
+  ],
+  "what_ai_generated_well": "AI helped turn dense source text into a first-pass summary and spotted missing citation fields.",
+  "what_was_wrong_and_corrected_manually": "AI invented one affected street name that was not in the source. The team removed it and added source snippets.",
+  "what_was_hard": "The source PDFs had inconsistent formatting and several scanned pages.",
+  "what_works": "The demo can paste one decision text and produce a cited resident brief.",
+  "what_does_not_work": "The demo does not yet process scanned PDFs without manual OCR.",
+  "next_steps": "Add OCR, test with two neighborhood groups, and ask the city clerk to verify terminology.",
+  "repo_link": "https://example.com/repo",
+  "demo_link": "https://example.com/demo"
+}
+

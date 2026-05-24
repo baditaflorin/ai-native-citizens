@@ -1,0 +1,60 @@
+:root {
+  --bg: #F5F2EC;
+  --ink: #0A0A0A;
+  --accent: #FF3D00;
+  --rule: #2A2826;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: min(100% - 2rem, 46rem);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 9vw, 5rem);
+  line-height: 1;
+}
+
+form,
+label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+form {
+  gap: 1rem;
+}
+
+input,
+textarea,
+button {
+  border: 2px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  padding: 0.8rem;
+}
+
+button {
+  background: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#output {
+  width: 100%;
+}
+

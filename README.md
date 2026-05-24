@@ -21,6 +21,10 @@ AI-Native Citizens treats civic AI literacy as a practical skill: research a pub
 - Single-page static landing site in `site/`
 - Mandatory AI Build Log template
 
+## v0.2 First Pass on Main
+
+The `main` branch also carries the first v0.2 pass: structured challenge/workflow data, JSON schemas, a static challenge browser, validation scripts, and three starter-kit scaffolds. The official public release remains `v0.1.0`; the v0.2 work is intentionally marked alpha until tested in a real sprint.
+
 ## Repository Map
 
 ```text
@@ -34,6 +38,10 @@ ai-native-citizens/
 ├── docs/
 ├── templates/
 ├── adr/
+├── data/
+├── schemas/
+├── scripts/
+├── starter-kits/
 ├── site/
 └── translations/
 ```
@@ -83,14 +91,23 @@ Municipality or university revenue: local sprint facilitation, challenge design,
 - Multi-language site
 - Discord or Matrix infrastructure
 - Newsletter
-- Searchable challenge bank and build-log UI
+- Build-log UI
 - Sponsor portal
 - Local chapter application form
 - Annual Summit branding
+
+## Validation
+
+Run the repository gate from the root:
+
+```bash
+npm test
+```
+
+The test script checks required v0.1 files, manifesto guardrails, structured v0.2 data, starter-kit scaffolds, and the AI Build Log generator sample.
 
 ## License
 
 Documentation is licensed under Creative Commons Attribution 4.0. Code is licensed under MIT. The AI-Native Citizens name and brand are trademark-controlled; open use of the kit does not grant permission to misrepresent unofficial activity as an official sprint.
 
 See `LICENSE` for the combined license notice.
-

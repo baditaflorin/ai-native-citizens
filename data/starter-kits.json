@@ -1,0 +1,24 @@
+[
+  {
+    "id": "SK-01",
+    "name": "Static Landing Page",
+    "path": "starter-kits/static-landing-page",
+    "status": "alpha",
+    "summary": "No-build HTML/CSS starter for teams that need a public project page in under 30 minutes."
+  },
+  {
+    "id": "SK-02",
+    "name": "FOIA Generator",
+    "path": "starter-kits/foia-generator",
+    "status": "alpha",
+    "summary": "Small browser-only guided form that turns a public-information goal into a request draft."
+  },
+  {
+    "id": "SK-03",
+    "name": "AI Build Log Generator",
+    "path": "starter-kits/ai-build-log-generator",
+    "status": "alpha",
+    "summary": "Node CLI that validates structured team notes and emits the mandatory Markdown build log."
+  }
+]
+
