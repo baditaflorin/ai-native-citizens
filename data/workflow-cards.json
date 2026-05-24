@@ -1,0 +1,15 @@
+[
+  {"id":"WF-01","title":"Turn a complaint into a product brief","what_it_does":"Converts a raw complaint into a focused user, problem, scope, and demo target.","verify":"Ask a real person with the problem whether the brief feels true."},
+  {"id":"WF-02","title":"Generate user flows from a brief","what_it_does":"Produces step-by-step flows for the main user path.","verify":"Walk through the flow with a timer and a non-team participant."},
+  {"id":"WF-03","title":"Critique your own idea","what_it_does":"Red-teams the concept before the team falls in love with it.","verify":"Convert at least 3 risks into concrete changes or disclaimers."},
+  {"id":"WF-04","title":"Build a prototype with Lovable, v0, or Bolt","what_it_does":"Turns a scoped brief and flow into a fast interface prototype.","verify":"Run the prototype locally, click every path, and replace fake claims with labels."},
+  {"id":"WF-05","title":"Debug with Cursor or Claude Code","what_it_does":"Uses an AI coding agent to inspect, patch, and test a bug.","verify":"Review the diff, rerun the broken flow, and write the fix in the build log."},
+  {"id":"WF-06","title":"PDFs to structured data","what_it_does":"Extracts tables, entities, or sections from public PDFs.","verify":"Sample 10 rows against the original PDF and record corrections."},
+  {"id":"WF-07","title":"Landing page in 30 minutes","what_it_does":"Produces a simple public page for the project.","verify":"Open on mobile width, check links, and run an accessibility pass."},
+  {"id":"WF-08","title":"Prepare a 5-minute demo","what_it_does":"Creates a tight demo script with one live path.","verify":"Rehearse once with a timer and cut 30 percent."},
+  {"id":"WF-09","title":"Documentation pass","what_it_does":"Turns rough notes into a readable README or build log.","verify":"Compare against raw notes and confirm all failures remain visible."},
+  {"id":"WF-10","title":"Hallucination check","what_it_does":"Finds unsupported claims, invented citations, and overconfident summaries.","verify":"Click sources, compare text, and mark unsupported claims in the UI."},
+  {"id":"WF-11","title":"Non-technical user testing simulation","what_it_does":"Simulates confusion from a realistic non-technical user.","verify":"Test with one real person if possible."},
+  {"id":"WF-12","title":"Ship-ready accessibility pass","what_it_does":"Checks structure, labels, keyboard paths, contrast, and plain-language errors.","verify":"Use keyboard only, run Lighthouse, and fix visible blockers."}
+]
+
