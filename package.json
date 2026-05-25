@@ -1,6 +1,6 @@
 {
   "name": "ai-native-citizens",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0-alpha.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,4 +9,3 @@
     "test:v0.2": "node scripts/validate-release.mjs --v02 && node starter-kits/ai-build-log-generator/bin/generate-build-log.mjs starter-kits/ai-build-log-generator/examples/sample-input.json >/tmp/ai-native-build-log-sample.md"
   }
 }
-
