@@ -91,7 +91,8 @@ button:focus-visible {
 }
 
 .hero {
-  min-height: auto;
+  min-height: calc(100vh - 8rem);
+  min-height: calc(100svh - 8rem);
   padding: clamp(4rem, 16vh, 8rem) 0 clamp(3rem, 8vh, 5rem);
   display: flex;
   flex-direction: column;
